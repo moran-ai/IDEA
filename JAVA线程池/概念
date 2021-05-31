@@ -1,0 +1,13 @@
+线程池：容器 --> 集合(ArrayList, HashSet, LinkedList<Thread>, HashMap)
+
+步骤：
+    1.当程序第一次启动时，创建多个线程，保存到一个集合中
+    2.当需要使用线程时，从集合中取出线程使用
+    3.使用List集合：Thread t = list.remove(0); 返回被删除的元素(线程只能被一个任务使用)
+    4.使用LinkedList集合:Thread t = LikedList.first(); 移除第一个元素，返回被删除的元素
+    5.使用完线程，需要把线程归还到集合中
+        List集合：list.add()
+        LinkedList集合：linkedlist.addLast()
+在jdk1.5之后，jdk内置了线程池，可以直接使用
+
+线程池：一个容纳多个线程的容器，其中的线程可以反复使用，省去了频繁创建线程对象的操作，避免消耗过多资源
