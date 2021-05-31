@@ -1,0 +1,16 @@
+发红包逻辑：
+    1.返回值类型：ArrayList<Integer>
+    2.方法名：send()
+    3.参数列表：int count:红包个数
+               int totalMany:红包钱数
+    public ArrayList<Interge> send(int count, int totalMany){
+
+    }
+
+收红包逻辑：
+    1.返回值类型：void
+    2.方法名：recive()
+    3.参数列表：ArrayList<Integer>
+    public void recive(ArrayList<Integer> lsit){
+
+    }
