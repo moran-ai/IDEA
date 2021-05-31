@@ -1,0 +1,14 @@
+泛型：是一种未知的数据类型，不知道使用什么数据类型时，可以使用泛型
+泛型也可以看作一个变量，用来接收数据类型
+E e:Element：元素
+T t:type
+
+ArrayList集合在定义的时候，不知道集合中都会存储什么类型的数据，所以类型使用泛型
+
+E:未知的数据类型
+public class ArrayList<E>{
+    public boolean add(E e){}
+    public E get(Int Index){}
+}
+
+创建集合对象的时候，就会确定泛型的数据类型

@@ -1,0 +1,14 @@
+String类
+    字符串是常量，它们的值在创建后不能被改变
+    字符串的底层是一个被final修饰的数组，不能改变，是一个常量
+    public final byte[] value;
+
+进行字符串的相加，内存中就会有多个字符串，占用空间多，效率低
+
+
+StringBuilder类
+    字符串缓冲区，可以提高字符串的操作效率（看成一个长度可以变化的字符串）
+    底层也是一个数组，没有final修饰，可以改变长度
+    byte[] value = new byte[16];
+    StringBuilde在内存中始终是一个数组，占用空间小，效率高
+    如果超出了StringBuilder的容量，会自动扩容
